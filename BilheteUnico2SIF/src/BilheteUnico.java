@@ -24,13 +24,14 @@ public class BilheteUnico {
 	//Metodo para debitar valor do saldo do bilhete
 	public void passarNaCatraca() {
 		if(saldo >= valorDaPassagem) {
-		    if(usuario.tipo.equalsIgnoreCase("Estudante") || usuario.tipo.equalsIgnoreCase("Professor"));
+		    if(usuario.tipo.equalsIgnoreCase("Estudante") || usuario.tipo.equalsIgnoreCase("Professor")) {
 		    saldo -= valorDaPassagem /2;
 		} else {
 			saldo -= valorDaPassagem;
 		}
 	}
-	
+	}
+
 	//Metodo para carregar o bilhete
 	public void carregar(double valor) {
 		this.saldo += valor;
